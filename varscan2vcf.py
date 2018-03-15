@@ -142,6 +142,7 @@ def makeVcfRecord(nativeIp):
     else:
         gt = "0/0"
 
+    # add the percentage with % and comma, fix it!
     tumor_var_freq = float(re.sub('%', '', nIp[10]).replace(",", "."))
     if tumor_var_freq > 10 and tumor_var_freq < 75:
         gt2 = '0/1'
